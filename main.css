@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.container{
+    background-color:orange;
+    padding :2em;
+    display :flex;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+    height:100vh;
+}
+.container .buttons-panel{
+    width:20em;
+    padding:2em;
+    display :flex;
+    justify-content:space-around;
+    align-items:center;  
+}
+.container .buttons-panel button{
+    padding:1rem;
+    border-radius:10px;
+    box-shadow:4px 4px rgb(206, 92, 0);
+    outline:none;
+    border-width:0;
+    font-size:15px;
+    background-color:#FFF;
+    color:orange;
+    font-family:'Dela Gothic One', cursive;  
+}
+.container .buttons-panel button:focus{
+    box-shadow:0px 0px rgb(116, 56, 0);
+    transform: translate(4px,4px);
+}
+.logo-panel .logo{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 101, 29);
+    position: relative;
+    border-radius: 5%;
+    transition: border-radius 1s ease-in-out;   
+}
+.logo-panel .logo span:first-child{
+    border:40px solid rgb(255, 255, 255);
+    position:absolute;
+    width: 50%;
+    height: 40%;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 0 35px 0 0;
+    border-bottom-width: 0;
+}
+.logo-panel .logo span:first-child::before{
+    content: '';
+    width: 40%;
+    height: 80%;
+    left: 51%;
+    top: 60%;
+    border: 2em solid rgb(255, 101, 29);
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 0 25px 0 0;
+}
+.logo-panel .logo span:nth-child(2){
+    width: 2rem;
+    height: 40%;
+    background-color: rgb(255, 255, 255);
+    position:absolute;
+    right: 10%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
